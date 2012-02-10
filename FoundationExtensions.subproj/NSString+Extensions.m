@@ -22,6 +22,10 @@
 #import "EDObjectPair.h"
 
 
+#if !defined(TARGET_OS_IPHONE) || !TARGET_OS_IPHONE
+#import <Cocoa/Cocoa.h>
+#endif
+
 @interface NSString(EDExtensionsPrivateAPI)
 + (NSDictionary *)_contentTypeExtensionMapping;
 @end
@@ -136,6 +140,7 @@ static NSCharacterSet *iwsSet = nil;
     return temp;
 }
 
+#if !defined(TARGET_OS_IPHONE) || !TARGET_OS_IPHONE
 
 /*" Returns a string that is not wider than %maxWidths pixels. "*/
 
@@ -177,6 +182,7 @@ static NSCharacterSet *iwsSet = nil;
     return nil;
 }
 
+#endif
 
 /*" Returns YES if the receiver's prefix is equal to %string, comparing case insensitive. "*/
 
