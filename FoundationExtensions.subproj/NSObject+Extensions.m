@@ -19,7 +19,6 @@
 //---------------------------------------------------------------------------------------
 
 #import <Foundation/Foundation.h>
-#import <objc/objc-class.h>
 #import "EDObjcRuntime.h"
 #import "NSObject+Extensions.h"
 
