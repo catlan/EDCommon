@@ -18,7 +18,7 @@
 //  OR OF ANY DERIVATIVE WORK.
 //---------------------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 #import "EDCommonDefines.h"
 #import "EDObjcRuntime.h"
@@ -29,39 +29,54 @@
 #import "NSDate+Extensions.h"
 #import "NSDictionary+Extensions.h"
 #import "NSFileHandle+Extensions.h"
+#if YOU_GONNA_BE_DELETED
 #import "NSHost+Extensions.h"
+#endif
 #import "NSInvocation+Extensions.h"
 #import "NSObject+Extensions.h"
 #import "NSProcessInfo+Extensions.h"
 #import "NSScanner+Extensions.h"
 #import "NSSet+Extensions.h"
 #import "NSString+Extensions.h"
+#if YOU_GONNA_BE_DELETED
 #import "EDSocket.h"
 #import "EDIPSocket.h"
 #import "EDTCPSocket.h"
 #import "EDUDPSocket.h"
+#endif
 #import "EDStream.h"
 #import "EDTextWriter.h"
 
 #import "EDBitmapCharset.h"
+#if YOU_GONNA_BE_DELETED
 #import "EDIRCObject.h"
+#endif
 #import "EDLightWeightLock.h"
 #import "EDLRUCache.h"
 #import "EDMutableObjectPair.h"
+#if YOU_GONNA_BE_DELETED
 #import "EDNumberSet.h"
+#endif
 #import "EDObjectPair.h"
 #import "EDObjectReference.h"
+#if YOU_GONNA_BE_DELETED
 #import "EDRange.h"
+#endif
 #import "EDSortedArray.h"
+#if YOU_GONNA_BE_DELETED
 #import "EDSparseClusterArray.h"
+#endif
 #import "EDStack.h"
 #import "EDStringScanner.h"
 #import "EDStringWriter.h"
 
+#if YOU_GONNA_BE_DELETED
 #import "EDMLParser.h"
 #import "EDMLTagProcessorProtocol.h"
 #import "EDAOMTagProcessor.h"
+#endif
 
+#if YOU_GONNA_BE_DELETED
 #import "NSApplication+Extensions.h"
 #import "NSAttributedString+AppKitExtensions.h"
 #import "NSMatrix+Extensions.h"
@@ -76,3 +91,4 @@
 #import "EDTableView.h"
 #import "EDSwapView.h"
 #import "EDToolbarDefinition.h"
+#endif
