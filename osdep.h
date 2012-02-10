@@ -35,7 +35,6 @@
 #import <sys/socket.h>
 #import <sys/ioctl.h>
 #import <sys/types.h>
-#import <sys/dir.h>
 #import <sys/errno.h>
 #import <sys/stat.h>
 #import <sys/uio.h>
