@@ -99,6 +99,7 @@ static NSData	*linebreakSequences[3];
     return [[[self alloc] initWithFileHandle:handle] autorelease];
 }
 
+#if YOU_GONNA_BE_DELETED
 
 /*" Creates and returns a stream for an EDTCPSocket connected to port on host. "*/
 
@@ -141,6 +142,7 @@ static NSData	*linebreakSequences[3];
     return [self streamConnectedToHost:[NSHost hostWithName:hostname] port:port sendTimeout:sendTimeout receiveTimeout:receiveTimeout];
 }
 
+#endif
 
 //---------------------------------------------------------------------------------------
 //	INITIALIZATION & DEALLOC

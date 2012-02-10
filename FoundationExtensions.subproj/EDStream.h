@@ -43,10 +43,12 @@ struct _EDSFlags {
 + (id)streamForReadingAtPath:(NSString *)path;
 + (id)streamForWritingAtPath:(NSString *)path;
 + (id)streamForUpdatingAtPath:(NSString *)path;
+#if YOU_GONNA_BE_DELETED
 + (id)streamConnectedToHost:(NSHost *)host port:(unsigned short)port;
 + (id)streamConnectedToHost:(NSHost *)host port:(unsigned short)port sendTimeout:(NSTimeInterval)sendTimeout receiveTimeout:(NSTimeInterval)receiveTimeout;
 + (id)streamConnectedToHostWithName:(NSString *)hostname port:(unsigned short)port;
 + (id)streamConnectedToHostWithName:(NSString *)hostname port:(unsigned short)port sendTimeout:(NSTimeInterval)sendTimeout receiveTimeout:(NSTimeInterval)receiveTimeout;
+#endif
 
 - (id)initWithFileHandle:(NSFileHandle *)aFileHandle;
 

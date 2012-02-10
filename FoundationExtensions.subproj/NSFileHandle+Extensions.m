@@ -86,6 +86,7 @@
     return EDStringFromInAddr(sockaddr.sin_addr);
 }
 
+#if YOU_GONNA_BE_DELETED
 
 /*" Returns the host for the remote endpoint of the socket. "*/
 
@@ -94,6 +95,7 @@
     return [NSHost hostWithAddress:[self remoteAddress]];
 }
 
+#endif
 
 /*" Causes the full-duplex connection on the socket to be shut down. "*/
 

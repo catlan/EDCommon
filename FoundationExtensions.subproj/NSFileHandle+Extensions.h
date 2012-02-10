@@ -29,7 +29,9 @@
 
 - (unsigned short)remotePort;
 - (NSString *)remoteAddress;
+#if !defined(TARGET_OS_IPHONE) || !TARGET_OS_IPHONE
 - (NSHost *)remoteHost;
+#endif
 
 /*" Shutdown "*/
 
