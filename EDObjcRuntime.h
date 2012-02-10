@@ -21,9 +21,9 @@
 #ifndef GNU_RUNTIME /* NeXT RUNTIME */
 
 #import <objc/objc.h>
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
+#import <objc/message.h>
 #import <objc/objc-api.h>
-#import <objc/objc-class.h>
 
 /*" Portable runtime functions. Should be used instead of the corresponding NeXT or GNUStep runtime functions. "*/
 #define EDObjcMsgSend(obj, sel) objc_msgSend((obj), (sel))
